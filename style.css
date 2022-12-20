@@ -1,0 +1,250 @@
+:root[data="main"] {
+  --main-color: lightgray;
+  --radius: 10px;
+}
+
+:root[data="blue"] {
+  --main-color: blue;
+  --radius: 15px;
+}
+
+:root[data="yellow"] {
+  --main-color: yellow;
+  --radius: 10px 16px;
+}
+
+:root[data="green"] {
+  --main-color: green;
+  --radius: 30px 0px 30px 0px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(7, 1fr);
+  grid-gap: 2px;
+  grid-template-areas:
+    ". standard ac ."
+    "res res res res"
+    "jam menha zarb del"
+    "taghsim eight nine radic"
+    "seven six five per"
+    "four three two per"
+    "one zero mosavi per";
+}
+
+.stand {
+  grid-area: standard;
+  background: var(--main-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60%;
+  width: 20%;
+  border-radius: var(--radius);
+}
+
+.result {
+  grid-area: res;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+  word-wrap: break-word;
+  word-break: break-all;
+  padding: 10px;
+  font-size: large;
+  height: 90px;
+  border: 2px solid black;
+  background: var(--main-color);
+}
+
+.result .previous-operand {
+  color: rgb(243, 142, 142);
+  font-size: 1.5rem;
+}
+
+.result .current-operand {
+  color: white;
+  font-size: 2.5rem;
+}
+
+.num0 {
+  grid-area: zero;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--radius);
+  background: var(--main-color);
+}
+
+.num1 {
+  grid-area: one;
+  background: var(--main-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--radius);
+}
+
+.num2 {
+  grid-area: two;
+  background: var(--main-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--radius);
+}
+
+.num3 {
+  grid-area: three;
+  background: var(--main-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--radius);
+}
+
+.num4 {
+  grid-area: four;
+  background: var(--main-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--radius);
+}
+
+.num5 {
+  grid-area: five;
+  background: var(--main-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--radius);
+}
+
+.num6 {
+  grid-area: six;
+  background: var(--main-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--radius);
+}
+
+.num7 {
+  grid-area: seven;
+  background: var(--main-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--radius);
+}
+
+.num8 {
+  grid-area: eight;
+  background: var(--main-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--radius);
+}
+
+.num9 {
+  grid-area: nine;
+  background: var(--main-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--radius);
+}
+
+.plus {
+  grid-area: jam;
+  background: var(--main-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--radius);
+}
+
+.minus {
+  grid-area: menha;
+  background: var(--main-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--radius);
+}
+
+.multi {
+  grid-area: zarb;
+  background: var(--main-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--radius);
+}
+
+.divsion {
+  grid-area: taghsim;
+  background: var(--main-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--radius);
+}
+
+.equal {
+  grid-area: mosavi;
+  background: var(--main-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--radius);
+}
+
+.acbutton {
+  grid-area: ac;
+  display: flex;
+  width: 30px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--radius);
+  background: var(--main-color);
+}
+
+.delbut {
+  grid-area: del;
+  display: flex;
+  width: 30px;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--radius);
+  background: var(--main-color);
+}
+
+.radic {
+  grid-area: radic;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--radius);
+  background: var(--main-color);
+}
+
+.percent {
+  grid-area: per;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--radius);
+  background: var(--main-color);
+}
